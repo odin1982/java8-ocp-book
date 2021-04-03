@@ -1,4 +1,4 @@
-package org.ocp.pag48;
+package org.ocp.pag048;
 
 public class Eagle implements Fly{
 	/*
