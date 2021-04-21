@@ -1,0 +1,6 @@
+In which of the following situation will you use composition?
+
+Which method should also be overriden if public boolean equals(Object obj) is being
+overriden in a class?
+
+Ideally, how many instances of a class that implements the singleton pattern can be created?
