@@ -4,3 +4,5 @@ Which method should also be overriden if public boolean equals(Object obj) is be
 overriden in a class?
 
 Ideally, how many instances of a class that implements the singleton pattern can be created?
+
+Overriding method cannot throw an exception that is not thrown by the overriden method?
