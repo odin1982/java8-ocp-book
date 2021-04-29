@@ -1,4 +1,4 @@
-package org.ocp.simulador._02;
+package org.enthuware.javaClassDesign._01;
 
 public class A {
 	public A() {
