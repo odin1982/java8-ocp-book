@@ -33,6 +33,12 @@ public class Duck  implements Comparable<Duck>{
 			
 		};
 		
+		//use comparator with lambdas, comparator is a functional interface
+		Comparator<Duck> byWeight2 = (d1,d2) -> d1.getWeight() - d2.getWeight();
+		Comparator<Duck> byWeight3 = (Duck d1,Duck d2) -> d1.getWeight() - d2.getWeight();
+		Comparator<Duck> byWeight4 = (d1,d2) -> { return d1.getWeight() - d2.getWeight(); };
+		Comparator<Duck> byWeight5 = (Duck d1,Duck d2) -> { return d1.getWeight() - d2.getWeight(); };
+		
 		List<Duck> ducks = new ArrayList<>();
 		ducks.add(new Duck("Quack",7));
 		ducks.add(new Duck("Puddles",10));
