@@ -1,6 +1,5 @@
 package org.ocp.pag199;
 
-import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class PeekStreamExample {
