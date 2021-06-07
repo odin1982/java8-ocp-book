@@ -18,6 +18,7 @@ public class CollectingUsingGroupingPartioningMapping {
 		System.out.println(map2);
 		
 		Stream<String> ohMy3 = Stream.of("lions","tigers","bears");
-		TreeMap<Integer,List<String>> map = ohMy3.collect(collector)
+		TreeMap<Integer,Set<String>> map3 = ohMy3.collect(Collectors.groupingBy(String::length,TreeMap::new,Collectors.toSet()));
+		System.out.println(map3);
 	}
 }
