@@ -18,7 +18,15 @@ public class CollectingUsingGroupingPartioningMapping {
 		System.out.println(map2);
 		
 		Stream<String> ohMy3 = Stream.of("lions","tigers","bears");
-		TreeMap<Integer,Set<String>> map3 = ohMy3.collect(Collectors.groupingBy(String::length,TreeMap::new,Collectors.toSet()));
+		TreeMap<Integer,List<String>> map3 = ohMy3.collect(Collectors.groupingBy(String::length,TreeMap::new,Collectors.toList()));
 		System.out.println(map3);
+		
+		Stream<String> ohMy4 = Stream.of("lions","tigers","bears","elephant","bird");
+		Map<Boolean,List<String>> map4 = ohMy4.collect(Collectors.partitioningBy(s->s.length()<=5));
+		System.out.println(map4);
+		
+		Stream<String> ohMy5 = Stream.of("lions","tigers","bears","elephant","bird");
+		Map<Boolean,List<String>> map5 = ohMy5.collect(Collectors.partitioningBy(s->s.length()<=9));
+		System.out.println(map5);
 	}
 }
