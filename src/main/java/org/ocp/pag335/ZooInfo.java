@@ -11,7 +11,7 @@ public class ZooInfo {
 			System.out.println("begin");
 			service.execute(()->System.out.println("Printing zoo inventory"));
 			service.execute(()->{
-				for(int i=0;i<=3;i++) {
+				for(int i=0;i<1000;i++) {
 					System.out.println("Printing record i: " + i);
 				}
 			});
