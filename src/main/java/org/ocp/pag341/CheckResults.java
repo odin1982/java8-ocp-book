@@ -17,7 +17,7 @@ public class CheckResults {
 				for(int i=0;i<500;i++)CheckResults.counter++;
 			});
 			
-			result.get(10,TimeUnit.SECONDS);
+			result.get(10,TimeUnit.NANOSECONDS);
 			//result.get(1,TimeUnit.NANOSECONDS);
 			System.out.println("Reached!");
 			

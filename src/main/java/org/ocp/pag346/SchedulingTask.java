@@ -12,10 +12,10 @@ public class SchedulingTask {
 		Runnable task1 = () -> System.out.println("Hello Zoo");
 		Callable<String> task2 = () -> "Monkey";
 		
-//		ScheduledFuture<?> result1 = service.schedule(task1, 5, TimeUnit.SECONDS);//Ejecuta la tarea a los 5 segundos una vez
-//		ScheduledFuture<?> result2 = service.schedule(task2, 8, TimeUnit.MINUTES);
-//		ScheduledFuture<?> result3 = service.scheduleAtFixedRate(task1, 5, 5, TimeUnit.SECONDS);
-		service.scheduleWithFixedDelay(task1, 0, 5, TimeUnit.SECONDS);
+		ScheduledFuture<?> result1 = service.schedule(task1, 10, TimeUnit.SECONDS);//Ejecuta la tarea a los 5 segundos una vez
+		ScheduledFuture<?> result2 = service.schedule(task2, 1, TimeUnit.MINUTES);
+//		service.scheduleAtFixedRate(task1, 5, 5, TimeUnit.SECONDS);
+		service.scheduleWithFixedDelay(task1, 5, 5, TimeUnit.SECONDS);
 	}
 
 }
