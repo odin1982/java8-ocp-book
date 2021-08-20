@@ -20,7 +20,6 @@ public class Reactor implements Vaporizer{
 	public void boil() {
 		Vaporizer v = new Reactor();
 		v.vaporize();
-		v.shutdown();
 	}
 
 }
