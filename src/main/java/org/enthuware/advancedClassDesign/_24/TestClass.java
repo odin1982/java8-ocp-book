@@ -12,6 +12,8 @@ interface Office{
 	}
 }
 
+interface WFH extends House,Office{}
+
 class HomeOffice implements House,Office{
 	public String getAddress() {
 		return "R No 1,Home";
