@@ -1,6 +1,6 @@
 package org.enthuware.advancedClassDesign._02;
 
-class TestClass implements T1,T2{
+class TestClass implements T1,T2{	
 	@Override
 	public void m1() {}
 }
